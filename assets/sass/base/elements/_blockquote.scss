@@ -1,0 +1,22 @@
+//
+/* ----- c. blockquote ----- */
+//
+
+blockquote {
+  margin: 40px;
+  font-style: italic;
+  @include rem( font-size, $blockquote--mobile--font-size);
+
+  &::before {
+    content: "\201C";
+    display: block;
+    height: 0;
+    left: -20px;
+    position: relative;
+    top: -10px;
+  }
+
+  @media only screen and (min-width: $screen-size--regular) {
+    @include rem( font-size, $blockquote--desktop--font-size);
+  }
+}

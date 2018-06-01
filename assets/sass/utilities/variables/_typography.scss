@@ -1,0 +1,137 @@
+// Common Fonts
+$font-family--serenity: 'Serenity', sans-serif;
+$font-family--tenez: 'Tenez', serif;
+
+$base--font-family: $font-family--serenity;
+$accent-font-family: $font-family--tenez;
+
+// Base Typography
+//===========
+$html--font-size: 62.5%;
+
+
+$base--font-size: 20px;
+$base--mobile--font-size: 18px;
+$base--div--font-size: 2rem;
+$base--div--mobile--font-size: 1.8rem;
+$base--line-height: 1.625;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-heavy: 900;
+$font-weight-thin: 300;
+
+
+
+// Headings
+//===========
+$headings--font-family: $font-family--serenity;
+$headings--line-height: 1.4;
+
+$h1--desktop--font-size:  42px;
+$h2--desktop--font-size:  30px;
+$h3--desktop--font-size:  24px;
+$h4--desktop--font-size:  20px;
+$h5--desktop--font-size:  18px;
+$h6--desktop--font-size:  16px;
+
+$h1--tablet--font-size:  42px;
+$h2--tablet--font-size:  30px;
+$h3--tablet--font-size:  24px;
+$h4--tablet--font-size:  20px;
+$h5--tablet--font-size:  18px;
+$h6--tablet--font-size:  16px;
+
+$h1--mobile--font-size:  42px;
+$h2--mobile--font-size:  30px;
+$h3--mobile--font-size:  24px;
+$h4--mobile--font-size:  20px;
+$h5--mobile--font-size:  18px;
+$h6--mobile--font-size:  16px;
+
+
+// Elements
+//===========
+$blockquote--desktop--font-size: 30px;
+$blockquote--mobile--font-size: 30px;
+
+$blockquote--font-family: $accent-font-family;
+
+$input--desktop--font-size: 18px;
+$input--tablet--font-size: 18px;
+$input--mobile--font-size: 18px;
+
+$button--desktop--font-size: 16px;
+$button--tablet--font-size: 16px;
+$button--mobile--font-size: 16px;
+
+
+// Navigation
+//===========
+
+$nav--desktop--font-size: 18px;
+$nav--tablet--font-size: 16px;
+$nav--mobile--font-size: 14px;
+
+$submenu--desktop--font-size: 14px;
+$submenu--tablet--font-size: 14px;
+$submenu--mobile--font-size: 14px;
+
+$primary-nav--font-size: 14px;
+$archive-pagination--font-size: 16px;
+
+//
+// Header
+//==================
+$site-title--font-size: 30px;
+$site-description--font-size: 16px;
+
+
+//
+// Footer
+//==================
+$site-footer--font-size: 16px;
+$footer-widgets--font-size: 18px;
+
+//
+// Entry Content
+//===================
+$entry-meta--font-size: 16px;
+$entry-header__entry-meta--font-size: 16px;
+$entry-footer__entry-meta--font-size: 16px;
+
+$entry-title--font-size: 36px;
+
+//single
+$h1-single--font-size: 40px;
+$h2-single--font-size: 32px;
+$h3-single--font-size: 26px;
+$h4-single--font-size: 42px;
+$h5-single--font-size: 22px;
+$h6-single--font-size: 22px;
+
+//
+// Comments
+//===================
+$comments--font-size: 16px;
+
+//
+// Widgets
+//===================
+$widget-title--font-size: 18px;
+$featured-content__entry-title--font-size: 20px;
+
+//
+// Plugins
+//===================
+$enews--font-size: 16px;
+
+//
+// General Components
+//===================
+$breadcrumbs--font-size: 16px;
+$author-box--font-size: 18px;
+$author-box__Title--font-size: 20px;
+$after-entry--font-size: 18px;
+$archive-description--font-size: 18px;
+$archive-title--font-size: 20px;

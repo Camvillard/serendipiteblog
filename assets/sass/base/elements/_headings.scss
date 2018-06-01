@@ -1,0 +1,91 @@
+//
+/* ----- d. headings ----- */
+//
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings--font-family;
+  font-weight: 600;
+  line-height: $headings--line-height;
+  margin: 0 0 10px;
+}
+
+h1 {
+  @include rem( font-size, $h1--mobile--font-size );
+}
+
+h2 {
+  @include rem( font-size, $h2--mobile--font-size );
+}
+
+h3 {
+  @include rem( font-size, $h3--mobile--font-size );
+}
+
+h4 {
+  @include rem( font-size, $h4--mobile--font-size );
+}
+
+h5 {
+  @include rem( font-size, $h5--mobile--font-size );
+}
+
+h6 {
+  @include rem( font-size, $h6--mobile--font-size );
+}
+
+@media only screen and (min-width: $screen-size--medium) {
+  h1 {
+    @include rem( font-size, $h1--tablet--font-size );
+  }
+
+  h2 {
+    @include rem( font-size, $h2--tablet--font-size );
+  }
+
+  h3 {
+    @include rem( font-size, $h3--tablet--font-size );
+  }
+
+  h4 {
+    @include rem( font-size, $h4--tablet--font-size );
+  }
+
+  h5 {
+    @include rem( font-size, $h5--tablet--font-size );
+  }
+
+  h6 {
+    @include rem( font-size, $h6--tablet--font-size );
+  }
+}
+
+@media only screen and (min-width: $screen-size--large) {
+  h1 {
+    @include rem( font-size, $h1--desktop--font-size );
+  }
+
+  h2 {
+    @include rem( font-size, $h2--desktop--font-size );
+  }
+
+  h3 {
+    @include rem( font-size, $h3--desktop--font-size );
+  }
+
+  h4 {
+    @include rem( font-size, $h4--desktop--font-size );
+  }
+
+  h5 {
+    @include rem( font-size, $h5--desktop--font-size );
+  }
+
+  h6 {
+    @include rem( font-size, $h6--desktop--font-size );
+  }
+}

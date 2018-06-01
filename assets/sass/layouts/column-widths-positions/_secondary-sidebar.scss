@@ -1,0 +1,10 @@
+/* ----- secondary sidebar ----- */
+
+.sidebar-secondary {
+  float: left;
+  width: $secondary-sidebar--width;
+
+  .content-sidebar-sidebar & {
+    float: right;
+  }
+}

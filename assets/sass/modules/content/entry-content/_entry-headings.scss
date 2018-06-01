@@ -1,0 +1,31 @@
+/* ----- headings & typo (entry content) ----- */
+
+.single-post {
+  .entry-content {
+
+    h1 {
+      @include rem( font-size, $h1-single--font-size );
+    }
+
+    h2 {
+      @include rem( font-size, $h2-single--font-size );
+    }
+
+    h3 {
+      @include rem( font-size, $h3-single--font-size );
+    }
+
+    h4 {
+      @include rem( font-size, $h4-single--font-size );
+    }
+
+    h5 {
+      @include rem( font-size, $h5-single--font-size );
+    }
+
+    h6 {
+      @include rem( font-size, $h6-single--font-size );
+    }
+  }
+
+}

@@ -1,0 +1,165 @@
+/*!
+	Theme Name: serendipite
+	Theme URI: https://camillevillard.com
+
+	Description: A very cool starter child theme based on the Genesis framework for Wordpress.
+	Author: Camille Villard
+	Author URI: https://camillevillard.com
+
+	Version: 1.0.0
+
+	Tags: starter theme, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+	Template: genesis
+	Template Version: 2.2.3
+
+	License: protected by copyright / free for personal use only
+	Text Domain: serendipite
+
+
+SOMMAIRE
+  1. HTML RESET
+    a. baseline normalize
+    b. box sizing
+    c. float clearing
+
+  2. DEFAULTS ELEMENTS
+    a. defaults
+    b. lists
+    c. blockquote
+    d. headings
+    e. objects
+    f. forms
+    g. gallery
+    h. tables
+    i. accessibility
+
+  3. COMMON
+    a. aligns
+    b. buttons
+    c. images
+    d. audio-video
+
+  4. STRUCTURE & LAYOUT
+    a. site containers
+    b. columns : widths & positions
+      - base
+      - content sidebar wrap
+      - content
+      - primary sidebar
+      - secondary sidebar
+    c. columns
+      - column-classes
+      - neat-columns
+      - full-width
+
+  5. MODULES
+    a. site header
+      - base
+      - title area
+          base
+          site-title
+          site description
+          header image
+      - header right
+    b. site navigation
+      - genesis menu
+      - accessible-menu
+      - breadcrumbs
+      - site-header
+      - primary
+      - secondary
+      - search-form
+      - pagination
+      - site-footer
+      - responsive menu
+    c. content area
+      - structure
+      - entry-header
+          entry title
+          entry meta
+      - entry-content
+          elements
+          entry headings
+      - entry-footer
+          entry meta
+          entry pagination
+      - after entry
+    d. comments
+      - base
+      - comment-list
+      - comment-header
+      - avatar
+      - comment-content
+      - comment-author
+      - respond
+    e. sidebars
+      - sidebar elements
+    f. footer
+      - widgets
+      - site footer
+
+  6. TEMPLATES
+    a. front page
+      - front page : éléments communs
+    b. page à propos
+    c. page contact
+    d. page blogroll
+    e. archives
+      - éléments généraux
+      - archives des catégories
+      - archives des étiquettes
+
+  7. COMPONENTS
+    a. avatar
+    b. author box
+    c. skip link
+
+  8. WIDGETS
+    a. widgets : éléments de base
+    b. search form
+    c. calendar widget
+
+  9. PLUGINS
+    a. WP recipe maker
+      - general elements
+      - recipe header
+      - recipe ingredients
+      - recipe instructions
+      - recipe notes
+      - recipe print
+    b. instagram feed
+    c. social share
+    d. ninja forms
+    e. enews extended
+    f. jetpack
+
+    10. woocommerce
+    a. woocommerce base
+    b. woocommerce single-product
+    c. woocommerce categories
+    d. woocommerce cart-page
+    e. woocommerce checkout-page
+    f. woocommerce account-page
+    g. woocommerce cgv-page
+    h. woocommerce faq-page
+
+*/
+
+
+
+
+
+
+@import 'bourbon';
+@import 'neat';
+@import '../../node_modules/sass-rem/rem';
+
+@import 'utilities/index';
+@import 'base/index';
+@import 'layouts/index';
+@import 'modules/index';
+@import 'templates/index';
+@import 'components/index';
+@import 'widgets/index';
+@import 'plugins/index';

@@ -1,0 +1,72 @@
+/* ----- neat columns ----- */
+
+$neat-grid: (
+  columns: 12,
+  gutter: 25px,
+);
+
+$principal-grid: (
+  columns: 12,
+  gutter: 24px,
+);
+
+$principal-tablet-grid: (
+  columns: 8,
+  gutter: 16px,
+);
+
+
+$principal-mobile-grid: (
+  columns: 4,
+  gutter: 12px,
+);
+
+
+.one-half,
+.three-sixths,
+.two-fourths {
+  @include grid-column(6);
+}
+
+
+.one-third,
+.two-sixths {
+  @include grid-column(4);
+}
+
+.four-sixths,
+.two-thirds {
+  @include grid-column(8);
+}
+
+.one-fourth {
+  @include grid-column(3);
+}
+
+.three-fourths {
+  @include grid-column(9);
+}
+
+.one-sixth {
+  @include grid-column(2);
+}
+
+.five-sixths {
+  @include grid-column(10);
+}
+
+.last {
+  clear: right;
+}
+
+.first {
+  clear: left;
+}
+
+.one-half {
+  clear: left;
+
+  &.last {
+    clear: none;
+  }
+}
