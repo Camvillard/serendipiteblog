@@ -1,6 +1,23 @@
 /* ----- navigation : primary ----- */
 
 .nav-primary {
-  background-color: $primary-nav--background-color;
-  border-top: 1px solid $primary-nav--border-color;
+
+  @media only screen and (min-width: $screen-size--regular) {
+  @include grid-column(4, $principal-grid);
+  }
+
+  .menu-primary {
+    margin-top: 100px;
+    li {
+    text-transform: uppercase;
+    display: block;
+    }
+
+    a {
+    padding: 8px 20px;
+    @include rem(font-size, $menu-primary--desktop--font-size);
+    }
+
+  }
+
 }

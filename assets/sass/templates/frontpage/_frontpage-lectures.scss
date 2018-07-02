@@ -8,6 +8,49 @@ background: $rose-super-light;
   padding: 5%;
   }
 
+  .categories-articles {
+  text-align: center;
+  }
+
+  h2.entry-title {
+  font-size: $front-page-secondaires-title--mobile--font-size;
+  }
+
+  a.more-link {
+  background: $rose;
+  }
 
 
-}  
+  @media only screen and (min-width: $screen-size--regular) {
+    article {
+    padding: 3%;
+      // gère l'affichage du premier article de la section
+      &:first-of-type {
+      @include grid-column(8, $principal-tablet-grid);
+
+        a.aligncenter {
+          margin-top: 32px;
+        @include grid-column(4, $principal-tablet-grid);
+        }
+
+        .entry-header,
+        .entry-content {
+        @include grid-column(4, $principal-tablet-grid);
+        }
+
+        .entry-meta {
+        text-align: left;
+        }
+      }
+      @include grid-column(4, $principal-tablet-grid);
+    }
+
+  }
+
+
+
+
+
+
+
+}

@@ -1,19 +1,26 @@
 /* ----- navigation : secondary ----- */
 
 .nav-secondary {
+  clear:both;
   position: fixed;
+  top: 60vh;;
   left: -50px;
-
-  @media only screen and (max-width: $screen-size--regular) {
-    display: none;
-  }
+  display: none;
 
 
-@media only screen and (min-width: $screen-size--regular) {
-  .menu-secondary {
+  @media only screen and (min-width: $screen-size--regular) {
+  display:inline;
+
+    .menu-secondary {
     text-align: center;
     transform: rotate(-90deg);
+
+      a {
+      padding: 8px 20px;
+      @include rem(font-size, $menu-secondary--desktop--font-size);
+      }
+
+    }
   }
-}
 
 }

@@ -15,6 +15,10 @@
   margin-bottom: 12px;
   }
 
+  .entry-meta {
+  text-align: right;
+  }
+
   a.more-link {
   text-transform: uppercase;
   text-decoration: none;
@@ -108,6 +112,9 @@
       }
 
       .tous-articles {
+        .tous-articles {
+          @include grid-column(12, $principal-grid);
+          float: right;
         .signe {
         @include grid-column(7, $principal-grid);
         @include rem(font-size, $front-page-une-articles-suppl-signe--desktop--font-size);
@@ -122,10 +129,8 @@
 
       }
     }
-
-
-
   }
+}
 
 // ordis
   @media only screen and (min-width: $screen-size--large) {
