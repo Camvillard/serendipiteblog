@@ -2,84 +2,92 @@
 //===================
 $white: #fff;
 $black: #000;
-$red: #c3251d;
-$gray--light: #ccc;
-$gray--medium: #777;
-$gray: #333;
+
+$gris-clair: #D8D8D8;
+$gris-moyen: #7E7E7E;
+$gris: #3D3F3E;
+
+$celadon: #C6F4D2;
+$celadon-light: #E8FCEC;
+$celadon-dark: #548771;
+$rose: #FC427C;
+$rose-light: #FCD6DE;
+$rose-super-light: #FFF8FB;
+$rose-dark: #A50740;
 
 //
 // Color Configuration
 //===========================
 
-$link--color: $red;
-$link--hover-color: $gray;
+$link--color: $rose;
+$link--hover-color: $gris;
 
 // Elements
-$base__color: $gray;
+$base__color: $gris-moyen;
 $body--background-color: $white;
 
 // Form Elements
 $input--background-color: $white;
-$input--border-color: $gray--light;
-$input--color: $gray;
-$input--focus-border-color: $gray--light;
-$button--background-color: $gray;
+$input--border-color: $gris-clair;
+$input--color: $gris;
+$input--focus-border-color: $gris-clair;
+$button--background-color: $gris;
 $button--color: $white;
-$button--hover-background-color: $red;
+$button--hover-background-color: $rose;
 $button--hover-color: $white;
-$button--disabled-background-color: $gray--light;
-$button--disable-color: $gray--medium;
+$button--disabled-background-color: $gris-clair;
+$button--disable-color: $gris-moyen;
 
 //
 // Header
 //======================
 $site-header--background-color: $white;
-$site-title--link-color: $gray;
+$site-title--link-color: $gris;
 
 //
 // Navigation
 //============================
-$nav--link-color: $gray;
-$nav--hover-color: $red;
-$submenu--border-color: $gray--light;
+$nav--link-color: $gris;
+$nav--hover-color: $rose;
+$submenu--border-color: $gris-clair;
 $submenu--link-background-color: $white;
 
 $primary-nav--background-color: $white;
-$primary-nav--border-color: $gray--light;
+$primary-nav--border-color: $gris-clair;
 $primary-nav--link-color: $nav--link-color;
 
 $secondary-nav--background-color: $white;
-$secondary-nav--border-color: $gray--light;
+$secondary-nav--border-color: $gris-clair;
 $secondary-nav--link-color: $nav--link-color;
 
 $responsive-nav--background-color: $white;
 $responsive-nav--hover-color: $black;
-$responsive-nav--focus-color: $red;
+$responsive-nav--focus-color: $rose;
 
 $nav-toggle--background-color: $white;
-$nav-toggle--color: $gray;
+$nav-toggle--color: $gris;
 
 $archive-pagination--background-color: $white;
-$archive-pagination--color: $gray;
-$archive-pagination--hover-background-color: $red;
+$archive-pagination--color: $gris;
+$archive-pagination--hover-background-color: $rose;
 $archive-pagination--hover-color: $white;
 
 //
 // Footer
 //============================
 $siteFooter--background-color: $white;
-$site-footer--border-color: $gray--light;
+$site-footer--border-color: $gris-clair;
 $footer-widgets--background-color: $white;
 
 //
 // Entry Content
 //===================
-$entry-footer__meta--border-color: $gray--light;
-$entry--background-color: $white;
-$entry-title--link-color: $gray;
-$entry-title--hover-color: $red;
-$entry-content__code--background-color: $gray--light;
-$entry-content__code--color: $gray;
+$entry-footer__meta--border-color: $gris-clair;
+$entry--background-color: transparent;
+$entry-title--link-color: $gris;
+$entry-title--hover-color: $rose;
+$entry-content__code--background-color: $gris-clair;
+$entry-content__code--color: $gris;
 
 //
 // Comments
@@ -89,22 +97,22 @@ $comment--background-color: $white;
 //
 // Widgets
 //===================
-$widget-title--link-color: $gray;
+$widget-title--link-color: $gris;
 
 
 //
 // Plugins
 //===================
-$enews--background-color: $gray;
+$enews--background-color: $gris;
 $enews--color: $white;
-$enews__input--border-color: $gray;
-$enews__submit-button--background-color: $red;
+$enews__input--border-color: $gris;
+$enews__submit-button--background-color: $rose;
 $enews__submit-button--color: $white;
 $enews__submit-button__BackgroundHoverColor: $white;
-$enews__submit-button--hover-color: $red;
+$enews__submit-button--hover-color: $rose;
 
 // General Components
 $breadcrumbs--background-color: $white;
 $author-box--background-color: $white;
 $after-entry--background-color: $white;
-$archive-description--background-color: $gray--light;
+$archive-description--background-color: $gris-clair;

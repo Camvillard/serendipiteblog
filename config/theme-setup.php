@@ -32,8 +32,8 @@ return array(
     ),
 		'genesis-responsive-viewport' => null,
     'custom-header'                   => array(
-      'width'           => 600,
-      'height'          => 160,
+      'width'           => 680,
+      'height'          => 312,
       'header-selector' => '.site-title a',
       'header-text'     => false,
       'flex-height'     => true,

@@ -5,11 +5,11 @@
   .title-area {
     margin: 0 auto;
     max-width: $title-area--width;
-    padding: 0;
+    padding: 20px;
 
-    @media only screen and (max-width: 1023px) {
-      float: none;
-    }
+    // @media only screen and (max-width: 1023px) {
+    //   float: none;
+    // }
   }
 
   .site-title > a {
@@ -18,6 +18,7 @@
     float: left;
     min-height: $site-title--min-height;
     width: 100%;
+    // border: $border--medium-celadon;
   }
 
   .site-description,

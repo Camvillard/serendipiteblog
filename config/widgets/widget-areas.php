@@ -14,20 +14,50 @@ return array(
 	'unregister_widget_areas' => array(
 		'sidebar',
 		'sidebar-alt',
-		'header-right',
+		// 'header-right',
 	),
 
 	'register_widget_areas' => array(
 		array(
-			'id'          => 'front-page-primary',
-			'name'        => __( 'zone primaire', 'ktc' ),
-			'description' => __( 'This is the first widget area', 'serendipite' ),
+			'id'          => 'front-page-une',
+			'name'        => __( 'billet à la une', 'serendipite' ),
+			'description' => __( 'first widget area', 'serendipite' ),
 		),
 
 		array(
-			'id'          => 'front-page-secondary',
-			'name'        => __( 'zone secondaire', 'ktc' ),
-			'description' => __( 'This is the second widget area', 'serendipite' ),
+			'id'          => 'front-page-quotidien',
+			'name'        => __( 'articles quotidien', 'serendipite' ),
+			'description' => __( 'full width second widget area', 'serendipite' ),
+		),
+
+		array(
+			'id'          => 'front-page-developpement',
+			'name'        => __( 'articles developpement personnel', 'serendipite' ),
+			'description' => __( 'third widget area', 'serendipite' ),
+		),
+
+		array(
+			'id'          => 'front-page-about',
+			'name'        => __( 'zone pour un a propos', 'serendipite' ),
+			'description' => __( 'fourth widget area', 'serendipite' ),
+		),
+
+		array(
+			'id'          => 'front-page-education',
+			'name'        => __( 'articles education', 'serendipite' ),
+			'description' => __( 'fifth widget area', 'serendipite' ),
+		),
+
+		array(
+			'id'          => 'front-page-lecture',
+			'name'        => __( 'articles lecture', 'serendipite' ),
+			'description' => __( 'sixth widget area', 'serendipite' ),
+		),
+
+		array(
+			'id'          => 'front-page-divers',
+			'name'        => __( 'articles divers', 'serendipite' ),
+			'description' => __( 'seventh widget area', 'serendipite' ),
 		),
 
 	),

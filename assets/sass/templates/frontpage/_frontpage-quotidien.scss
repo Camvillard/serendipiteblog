@@ -1,0 +1,63 @@
+/* ----- front page : quotidien  ----- */
+
+
+.front-page-quotidien {
+background: $rose-super-light;
+
+  .wrap {
+  padding: 5%;
+  }
+
+  article {
+
+    .entry-meta {
+
+    }
+    h2.entry-title {
+    font-size: $front-page-secondaires-title--mobile--font-size;
+    }
+
+    a.more-link {
+    background: $rose;
+    }
+  }
+
+
+  //tablette
+  @media only screen and (min-width: $screen-size--regular) and (max-width: 1023px) {
+    article {
+
+      a.aligncenter {
+      @include grid-column(4, $principal-tablet-grid);
+      margin-bottom: 2px;
+      }
+
+      .entry-meta,
+      .entry-title {
+      @include grid-column(4, $principal-tablet-grid);
+      }
+
+      h2.entry-title {
+      font-size: $front-page-secondaires-title--tablet--font-size;
+      }
+
+      p {
+      @include grid-column(4, $principal-tablet-grid);
+      }
+    }
+  }
+
+  //desktop
+  @media only screen and (min-width: $screen-size--large) {
+    article {
+      @include grid-column(6, $principal-grid);
+
+      h2.entry-title {
+      font-size: $front-page-secondaires-title--desktop--font-size;
+      }
+
+    }
+  }
+
+
+}

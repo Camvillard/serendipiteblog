@@ -19,10 +19,10 @@ body {
 
   /* Chrome fix */
   > div {
-    font-size: $base--div--font-size;
+    font-size: $base--div--mobile--font-size;
 
-     @media screen and (max-width: 640px) {
-      font-size: $base--div--mobile--font-size;
+     @media screen and (min-width: $screen-size--small) {
+          font-size: $base--div--font-size;
     }
   }
 }

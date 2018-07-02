@@ -13,7 +13,7 @@
 
  namespace serendipite;
 
-
+remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
  add_filter( 'body_class', __NAMESPACE__ . '\add_custom_body_class', 1 );
  /**
   * Description.
@@ -42,15 +42,41 @@
   * @return void
   */
  function render_front_page_widgets() {
- 	genesis_widget_area( 'front-page-primary', array(
- 		'before' => '<div class="front-page-primary"><div class="wrap">',
+ 	genesis_widget_area( 'front-page-une', array(
+ 		'before' => '<div class="front-page-une"><div class="wrap">',
  		'after'  => '</div></div>',
  	) );
 
-  genesis_widget_area( 'front-page-secondary', array(
-    'before' => '<div class="front-page-secondary"><div class="wrap">',
+  genesis_widget_area( 'front-page-quotidien', array(
+    'before' => '<div class="front-page-quotidien"><div class="wrap">',
     'after'  => '</div></div>',
   ) );
+
+  genesis_widget_area( 'front-page-developpement', array(
+    'before' => '<div class="front-page-secondaire"><div class="wrap">',
+    'after'  => '</div></div>',
+  ) );
+
+  genesis_widget_area( 'front-page-about', array(
+    'before' => '<div class="front-page-about"><div class="wrap">',
+    'after'  => '</div></div>',
+  ) );
+
+  genesis_widget_area( 'front-page-education', array(
+    'before' => '<div class="front-page-secondaire"><div class="wrap">',
+    'after'  => '</div></div>',
+  ) );
+
+  genesis_widget_area( 'front-page-lecture', array(
+    'before' => '<div class="front-page-lecture"><div class="wrap">',
+    'after'  => '</div></div>',
+  ) );
+
+  genesis_widget_area( 'front-page-divers', array(
+    'before' => '<div class="front-page-secondaire"><div class="wrap">',
+    'after'  => '</div></div>',
+  ) );
+
  }
 
 

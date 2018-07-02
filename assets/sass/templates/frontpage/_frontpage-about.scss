@@ -1,0 +1,187 @@
+/* ----- front page : à propos ----- */
+
+
+.front-page-about {
+background: $celadon-light;
+
+  .wrap {
+  padding: 20px 8%;
+  margin: 20px auto 30px;
+  }
+
+  .about-liens a{
+  display: block;
+  font-family: $font-family--headings;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $gris;
+  }
+
+@media only screen and (max-width: $screen-size--medium) {
+
+  #text-2.widget_text {
+  position: relative;
+  @include grid-column(3, $principal-mobile-grid);
+  @include grid-push(1, $principal-mobile-grid);
+  text-align: justify;
+  @include rem(font-size, $front-page-about-texte--mobile--font-size);
+  .widget-wrap {
+    &:before {
+      position: absolute;
+      content: "";
+      background: url(assets/images/img_about.svg) no-repeat;
+      width: 140px;
+      height: 147px;
+      margin-left: -40%;
+      margin-top: -34%;
+      z-index: 4;
+      }
+    }
+  }
+
+  #custom_html-7.widget_custom_html {
+    position: relative;
+    @include grid-column(3, $principal-mobile-grid);
+    @include grid-push(1, $principal-mobile-grid);
+    .about-liens a{
+    text-align: left;
+    @include rem(font-size, $front-page-about-liens--mobile--font-size);
+    line-height: 2.8;
+    }
+  }
+
+}
+
+
+
+
+
+  //large mobile
+  @media only screen and (min-width: $screen-size--medium) and (max-width: $screen-size--regular){
+
+    .wrap {
+    padding: 30px 12%;
+    }
+
+    #text-2.widget_text {
+    position: relative;
+    @include grid-column(5, $principal-tablet-grid);
+    @include grid-push(2, $principal-tablet-grid);
+    .widget-wrap {
+      &:before {
+        position: absolute;
+        content: "";
+        background: url(assets/images/img_about.svg) no-repeat;
+        width: 180px;
+        height: 188px;
+        margin-left: -50%;
+        margin-top: 20%;
+        z-index: 4;
+        }
+      }
+    }
+
+    #custom_html-7.widget_custom_html {
+      @include grid-column(5, $principal-tablet-grid);
+      @include grid-push(2, $principal-tablet-grid);
+      .about-liens a{
+      text-align: left;
+      @include rem(font-size, $front-page-about-liens--tablet--font-size);
+      line-height: 3;
+      }
+    }
+
+  }
+
+  //tablet & small desktops
+  @media only screen and (min-width: $screen-size--regular) and (max-width: $screen-size--big) {
+
+    .wrap {
+    padding: 30px 8%;
+    position: relative;
+    }
+
+    #text-2.widget_text {
+    position: relative;
+    @include grid-column(8, $principal-grid);
+    @include grid-push(3, $principal-grid);
+    @include rem(font-size, $front-page-about-texte--tablet--font-size);
+    .widget-wrap {
+      &:before {
+        position: absolute;
+        content: "";
+        background: url(assets/images/img_about.svg) no-repeat;
+        width: 180px;
+        height: 188px;
+        margin-left: -40%;
+        margin-top: 20%;
+        z-index: 4;
+        }
+      }
+    }
+
+    #custom_html-7.widget_custom_html {
+      position: absolute;
+      top: 35%;
+      right: -50px;
+      transform: rotate(90deg);
+      .about-liens a{
+        text-align: center;
+        @include rem(font-size, $front-page-about-liens--tablet--font-size);
+        line-height: 3.4;
+      }
+    }
+
+  }
+
+  //desktop
+  @media only screen and (min-width: $screen-size--big) {
+    background: $white;
+
+    .wrap {
+    padding: 10px 8%;
+    }
+
+    #text-2.widget_text {
+    clear: both;
+    position: relative;
+    @include grid-column(7, $principal-grid);
+    @include grid-push(1, $principal-grid);
+    @include rem(font-size, $front-page-about-texte--desktop--font-size);
+    .widget-wrap{
+      &:before {
+        position: absolute;
+        content: "";
+        background: url(assets/images/img_about.svg) no-repeat;
+        width: 300px;
+        height: 313px;
+        margin-left: -20%;
+        margin-top: -20%;
+        z-index: 4;
+        }
+        .textwidget {
+        background: $celadon-light;
+        padding: 40px 60px;
+        }
+      }
+    }
+
+    #custom_html-7.widget_custom_html {
+      @include grid-column(4, $principal-grid);
+      margin-top: 300px;
+      .about-liens a{
+        text-align: left;
+        @include rem(font-size, $front-page-about-liens--desktop--font-size);
+        line-height: 3.6;
+      }
+    }
+
+  }
+
+
+
+
+
+
+}

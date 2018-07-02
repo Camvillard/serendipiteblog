@@ -21,7 +21,7 @@ function unregister_nav_events() {
 }
 
 // Reposition the secondary navigation menu
-add_action( 'genesis_footer', 'genesis_do_subnav', 5 );
+// add_action( 'genesis_footer', 'genesis_do_subnav', 5 );
 
 add_filter( 'wp_nav_menu_args', __NAMESPACE__ . '\setup_secondary_menu_args' );
 /**

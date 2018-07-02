@@ -140,3 +140,8 @@ function remove_genesis_page_templates( $page_templates ) {
 	unset( $page_templates['page_blog.php'] );
 	return $page_templates;
 }
+
+// Add Image Sizes.
+add_image_size( 'principal-image', 1400, 800, true );
+add_image_size( 'portrait-image', 860, 1200, true );
+add_image_size( 'landscape-image', 1140, 817, true );
