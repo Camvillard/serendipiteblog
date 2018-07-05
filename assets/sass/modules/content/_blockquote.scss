@@ -1,0 +1,36 @@
+//
+/* ----- c. blockquote ----- */
+//
+
+blockquote {
+margin: 30px;
+padding: 2%;
+background: $celadon-dark;
+@include rem( font-size, $blockquote--mobile--font-size);
+color: $white;
+font-family: $font-family--accent;
+font-style: italic;
+text-align: center;
+
+  &::before {
+  content: "\201C";
+  display: block;
+  }
+
+  em {
+  font-weight: $font-weight-bold;
+  }
+
+}
+
+@media only screen and (min-width: $screen-size--medium) {
+  blockquote {
+  @include rem( font-size, $blockquote--tablet--font-size);
+  }
+}
+
+@media only screen and (min-width: $screen-size--large) {
+  blockquote {
+  @include rem( font-size, $blockquote--desktop--font-size);
+  }
+}

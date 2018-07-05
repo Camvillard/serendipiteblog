@@ -4,6 +4,25 @@
   margin-bottom: 30px;
 
   p {
-    margin-bottom: 0;
+  margin-bottom: 0;
+  }
+
+  .comment-author {
+  text-transform: uppercase;
+  font-family: $font-family--headings;
+  font-weight: $font-weight-bold;
+    a {
+    color: $gris;
+    text-decoration: none;
+    }
+  }
+  .comment-meta {
+    font-style: italic;
+    font-family: $font-family--accent;
+    a {
+    text-decoration: none;
+    color: $gris;
+    }
+
   }
 }

@@ -3,13 +3,14 @@
 $white: #fff;
 $black: #000;
 
-$gris-clair: #D8D8D8;
+$gris-tres-clair: #F9F9F9;
+$gris-clair: #EDEDED;
 $gris-moyen: #7E7E7E;
 $gris: #3D3F3E;
 
 $celadon: #C6F4D2;
 $celadon-light: #E8FCEC;
-$celadon-dark: #548771;
+$celadon-dark: #9DCEAD;
 $rose: #FC427C;
 $rose-light: #FCD6DE;
 $rose-super-light: #FFF8FB;
@@ -64,8 +65,8 @@ $responsive-nav--background-color: $white;
 $responsive-nav--hover-color: $black;
 $responsive-nav--focus-color: $rose;
 
-$nav-toggle--background-color: $white;
-$nav-toggle--color: $gris;
+$nav-toggle--background-color: transparent;
+$nav-toggle--color: $celadon;
 
 $archive-pagination--background-color: $white;
 $archive-pagination--color: $gris;
@@ -84,8 +85,12 @@ $footer-widgets--background-color: $white;
 //===================
 $entry-footer__meta--border-color: $gris-clair;
 $entry--background-color: transparent;
+
 $entry-title--link-color: $gris;
 $entry-title--hover-color: $rose;
+
+$entry-title--color: $gris;
+
 $entry-content__code--background-color: $gris-clair;
 $entry-content__code--color: $gris;
 

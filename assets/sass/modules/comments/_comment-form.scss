@@ -1,0 +1,155 @@
+/* ----- comments : respond ----- */
+
+.comment-respond {
+  // max-width: $max-width;
+  background: $gris-tres-clair;
+  margin: auto;
+  padding: 60px 60px 80px;
+
+  .comment-reply-title {
+  text-align: center;
+  @include rem(font-size, $title-comments--mobile--font-size);
+  color: $gris;
+  }
+
+  .logged-in-as,
+  .comment-notes {
+  text-align: center;
+  @include rem(font-size, $comments-notes--mobile--font-size);
+  }
+
+  label {
+  display: none;
+  }
+
+  label[for="comment"] {
+  display: block;
+  background: $white;
+  text-transform: uppercase;
+  @include rem(font-size, $comments-placeholder--mobile--font-size);
+  }
+
+
+  input[type="email"],
+  input[type="text"],
+  input[type="url"],
+  textarea {
+  color: $gris-moyen;
+  width: 100%;
+  @include rem(font-size, $comments-placeholder--mobile--font-size);
+  padding-left: 22px;
+  text-transform: uppercase;
+  }
+
+  input#author,
+  input#email,
+  input#url,
+  textarea#comment {
+  border: none;
+  border-bottom: $border--thin-celadon;
+  }
+
+
+  ::-moz-placeholder {
+  opacity: 1;
+  @include rem(font-size, $comments-placeholder--mobile--font-size);
+  }
+
+  ::-webkit-input-placeholder {
+    @include rem(font-size, $comments-placeholder--mobile--font-size);
+  opacity: 1;
+  color: $gris-moyen;
+  }
+
+
+  .comment-form-cookies-consent {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: $screen-size--medium) {
+
+  .comment-respond {
+
+    .comment-reply-title{
+    @include rem(font-size, $title-comments--tablet--font-size);
+    }
+
+    .logged-in-as,
+    .comment-notes {
+    @include rem(font-size, $comments-notes--tablet--font-size);
+    }
+
+
+    input[type="email"],
+    input[type="text"],
+    input[type="url"],
+    textarea {
+      width: 80%;
+      margin-left: 10%;
+      @include rem(font-size, $comments-placeholder--tablet--font-size);
+    }
+
+    label[for="comment"] {
+      width: 80%;
+      margin-left: 10%;
+      padding-left: 22px;
+    }
+
+  }
+}
+
+@media only screen and (min-width: $screen-size--large) {
+  .comment-respond {
+
+    .comment-form {
+    width: 60%;
+    margin: auto;
+    }
+
+    .comment-reply-title{
+    @include rem(font-size, $title-comments--desktop--font-size);
+    }
+
+    .logged-in-as,
+    .comment-notes {
+    @include rem(font-size, $comments-notes--desktop--font-size);
+    }
+
+    input[type="email"],
+    input[type="text"],
+    input[type="url"],
+    textarea {
+    @include rem(font-size, $comments-placeholder--desktop--font-size);
+      &:focus {
+      @include rem(font-size, $comments-placeholder--desktop--font-size);
+      text-transform: none;
+      }
+    }
+
+    label[for="comment"] {
+    padding: 12px 22px;
+    }
+
+    .form-submit {
+    margin-right: 10%;
+    margin-bottom: 50px;
+    text-align: right;
+    }
+
+    input[type="submit"] {
+    background: $gris-moyen;
+    text-transform: uppercase;
+    font-family: $font-family--headings;
+    font-weight: $font-weight-bold;
+    &:hover {
+      font-style: italic;
+      font-family: $font-family--accent;
+      background: $celadon-dark;
+      color: $white;
+    }
+    }
+
+  }
+}

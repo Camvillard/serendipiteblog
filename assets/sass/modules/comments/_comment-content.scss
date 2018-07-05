@@ -7,3 +7,23 @@
     list-style-type: disc;
   }
 }
+
+.comment-reply {
+  margin: 30px auto 40px;
+  a {
+  text-transform: uppercase;
+  font-family: $font-family--headings;
+  text-decoration: none;
+  color: $gris-moyen;
+  font-weight: $font-weight-bold;
+  border: $border--thin-gris-moyen;
+  padding: 10px 34px 10px 16px;
+  }
+}
+
+@media only screen and (min-width: $screen-size--large) {
+  .comment-content {
+    @include rem(font-size, $comments-content--desktop--font-size);
+
+  }
+}

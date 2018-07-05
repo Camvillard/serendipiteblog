@@ -1,11 +1,26 @@
 /* ----- comments : list ----- */
 
 .comment-list {
+  padding: 20px 30px;
   li {
-    padding: 40px 0 0 30px;
+  padding: 40px 0 0 30px;
   }
 
   .depth-1 {
     padding-left: 0;
+  }
+}
+
+
+@media only screen and (min-width:$screen-size--medium) {
+  .comment-list {
+  padding: 20px 60px;
+  }
+}
+
+
+@media only screen and (min-width:$screen-size--large) {
+  .comment-list {
+  padding: 20px 80px;
   }
 }

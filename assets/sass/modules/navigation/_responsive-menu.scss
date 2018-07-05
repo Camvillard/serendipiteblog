@@ -7,8 +7,10 @@
     .nav-primary {
     display: none;
     }
+
     .genesis-nav-menu {
-      .sub-menu, .sub-menu a {
+      .sub-menu,
+      .sub-menu a {
       width: 100%;
       }
 
@@ -50,7 +52,7 @@
         float: none;
         margin: 1px 0;
         position: relative;
-        text-align: left;
+        text-align: right;
 
         a {
           border: none;

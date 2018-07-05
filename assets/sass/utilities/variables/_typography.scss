@@ -52,10 +52,6 @@ $h6--mobile--font-size:  16px;
 
 // Elements
 //===========
-$blockquote--desktop--font-size: 30px;
-$blockquote--mobile--font-size: 30px;
-
-$blockquote--font-family: $font-family--accent;
 
 $input--desktop--font-size: 18px;
 $input--tablet--font-size: 18px;
@@ -73,6 +69,7 @@ $button--mobile--font-size: 16px;
 $menu-primary--mobile--font-size: 14px;
 $menu-primary--tablet--font-size: 16px;
 $menu-primary--desktop--font-size: 18px;
+
 
 $menu-secondary--desktop--font-size: 16px;
 
@@ -139,24 +136,77 @@ $front-page-about-liens--desktop--font-size: 38px;
 //
 // Entry Content
 //===================
-$entry-meta--font-size: 16px;
-$entry-header__entry-meta--font-size: 16px;
-$entry-footer__entry-meta--font-size: 16px;
 
-$entry-title--font-size: 36px;
+$entry-header-meta--mobile--font-size: 16px;
+$entry-header-meta--tablet--font-size: 18px;
+$entry-header-meta--desktop--font-size: 18px;
 
-//single
-$h1-single--font-size: 40px;
-$h2-single--font-size: 32px;
-$h3-single--font-size: 26px;
-$h4-single--font-size: 42px;
-$h5-single--font-size: 22px;
-$h6-single--font-size: 22px;
+$entry-footer-meta--mobile--font-size: 18px;
+$entry-footer-meta--tablet--font-size: 20px;
+$entry-footer-meta--desktop--font-size: 20px;
+
+$entry-title--mobile--font-size: 42px;
+$entry-title--tablet--font-size: 52px;
+$entry-title--desktop--font-size: 60px;
+
+//
+// Single post
+//===================
+
+$h1-single--mobile--font-size: 38px;
+$h2-single--mobile--font-size: 32px;
+$h3-single--mobile--font-size: 26px;
+$h4-single--mobile--font-size: 26px;
+$h5-single--mobile--font-size: 30px;
+$h6-single--mobile--font-size: 24px;
+
+$h1-single--tablet--font-size: 40px;
+$h2-single--tablet--font-size: 32px;
+$h3-single--tablet--font-size: 26px;
+$h4-single--tablet--font-size: 26px;
+$h5-single--tablet--font-size: 34px;
+$h6-single--tablet--font-size: 26px;
+
+$h1-single--desktop--font-size: 50px;
+$h2-single--desktop--font-size: 40px;
+$h3-single--desktop--font-size: 34px;
+$h4-single--desktop--font-size: 34px;
+$h5-single--desktop--font-size: 38px;
+$h6-single--desktop--font-size: 30px;
+
+$bibliographie-titre--mobile--font-size: 28px;
+$bibliographie-titre--tablet--font-size: 30px;
+$bibliographie-titre--desktop--font-size: 36px;
+
+$bibliographie-cat--mobile--font-size: 24px;
+$bibliographie-cat--tablet--font-size: 30px;
+$bibliographie-cat--desktop--font-size: 30px;
+
+
+$blockquote--mobile--font-size: 22px;
+$blockquote--tablet--font-size: 24px;
+$blockquote--desktop--font-size: 26px;
+
+
 
 //
 // Comments
 //===================
-$comments--font-size: 16px;
+$title-comments--mobile--font-size: 20px;
+$title-comments--tablet--font-size: 24px;
+$title-comments--desktop--font-size: 36px;
+
+$comments-notes--mobile--font-size: 16px;
+$comments-notes--tablet--font-size: 20px;
+$comments-notes--desktop--font-size: 22px;
+
+$comments-content--mobile--font-size: 16px;
+$comments-content--tablet--font-size: 20px;
+$comments-content--desktop--font-size: 24px;
+
+$comments-placeholder--mobile--font-size: 18px;
+$comments-placeholder--tablet--font-size: 22px;
+$comments-placeholder--desktop--font-size: 24px;
 
 //
 // Widgets

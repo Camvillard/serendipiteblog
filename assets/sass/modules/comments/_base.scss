@@ -1,27 +1,42 @@
 /* ----- comments : base stylings ----- */
 
-.comment-respond,
-.entry-comments,
-.entry-pings {
-  background-color: $comment--background-color;
-  @include rem( font-size, $comments--font-size );
-  margin-bottom: 40px;
 
-  @media only screen and (max-width: 860px) {
-    padding: 30px;
-    margin-bottom: 5%;
-  }
+.entry-comments {
+  max-width: $max-width;
+  margin: 40px auto;
+  padding: 30px;
+  margin-bottom: 5%;
+  background-color: $comment--background-color;
+    h3 {
+    @include rem( font-size, $title-comments--mobile--font-size );
+    text-align: center;
+    }
 }
 
-.comment-respond,
+
 .entry-pings {
   padding: 60px 60px 32px;
 }
 
-.entry-comments {
-  padding: 60px;
-}
 
 .entry-pings .reply {
   display: none;
+}
+
+// tablette
+@media only screen and (min-width: $screen-size--medium) {
+
+}
+
+// desktop
+@media only screen and (min-width: $screen-size--large) {
+
+  .entry-comments {
+  margin-bottom: 40px;
+  padding: 30px 90px;
+    h3 {
+    @include rem( font-size, $title-comments--desktop--font-size );
+    }
+  }
+
 }

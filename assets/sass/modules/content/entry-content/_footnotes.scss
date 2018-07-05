@@ -1,0 +1,59 @@
+/* ----- headings & typo (entry content) ----- */
+
+.bibliographie {
+margin: 80px auto 40px;
+padding: 14px 22px;
+border: $border--medium-rose;
+text-align: center;
+
+  .bibli-titre {
+  @include rem(font-size, $bibliographie-titre--mobile--font-size);
+  font-weight: $font-weight-heavy;
+  font-family: $font-family--headings;
+  color: $rose;
+  text-transform: uppercase;
+  max-width: 80%;
+  margin: -40px auto 30px;
+  background: $white;
+  }
+
+  .bibli-categories {
+  @include rem(font-size, $bibliographie-cat--mobile--font-size);
+  text-transform: uppercase;
+  color: $celadon;
+  font-family: $font-family--headings;
+  font-weight: $font-weight-bold;
+  }
+
+}
+
+@media only screen and (min-width: $screen-size--medium) {
+  .bibliographie {
+    .bibli-titre {
+    @include rem(font-size, $bibliographie-titre--tablet--font-size);
+    max-width: 70%;
+    margin: -30px auto 30px;
+    }
+
+    .bibli-categories {
+    @include rem(font-size, $bibliographie-cat--tablet--font-size);
+    }
+  }
+
+}
+
+@media only screen and (min-width: $screen-size--large) {
+
+  .bibliographie {
+    .bibli-titre {
+    @include rem(font-size, $bibliographie-titre--desktop--font-size);
+    max-width: 60%;
+    margin: -32px auto 30px;
+    }
+
+    .bibli-categories {
+    @include rem(font-size, $bibliographie-cat--desktop--font-size);
+    }
+  }
+
+}

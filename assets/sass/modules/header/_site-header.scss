@@ -2,6 +2,8 @@
 
 .site-header {
 background-color: $site-header--background-color;
+@include grid-column(5, $principal-tablet-grid);
+@include grid-push(1, $principal-tablet-grid);
 
     .wrap {
     padding-left: 5%;
