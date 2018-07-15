@@ -1,0 +1,91 @@
+//
+/* ----- b. special templates : general elements ----- */
+//
+
+
+li.nav-templates {
+  max-width: $max-width;
+  margin: 40px auto;
+  text-align: center;
+  @include rem(font-size, $nav-templates--mobile--font-size);
+
+  a.btn-retour-au-blog {
+  margin: 4px 22px;
+  padding: 12px 18px;
+  color: $white;
+  font-family: $font-family--headings;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: $font-weight-bold;
+    &:hover {
+    font-family: $font-family--accent;
+    font-style: italic;
+    text-transform: none;
+    background: $white;
+    }
+  }
+
+  a.btn-contact {
+  margin: 4px 22px;
+  padding: 12px 22px;
+  background: $white;
+  font-family: $font-family--accent;
+  font-style: italic;
+  text-transform: none;
+  text-decoration: none;
+  font-weight: $font-weight-bold;
+    &:hover {
+    font-family: $font-family--headings;
+    text-transform: uppercase;
+    font-style: normal;
+    color: $white;
+    }
+  }
+
+}
+
+li.footer-templates {
+  // @include grid-column(5, $principal-grid);
+  text-align: center;
+  @include rem(font-size, $nav-templates--mobile--font-size);
+  text-transform: uppercase;
+  font-family: $font-family--headings;
+  a {
+  margin: 10px 40px;
+  font-weight: $font-weight-bold;
+  display: inline;
+  color: $celadon-dark;
+  text-decoration: none;
+  }
+}
+
+
+@media only screen and (min-width: $screen-size--large) {
+
+  li.nav-templates {
+    max-width: $max-width;
+    margin: 40px auto;
+    text-align: right;
+    @include rem(font-size, $nav-templates--desktop--font-size);
+
+    a.btn-retour-au-blog,
+    a.btn-contact {
+    margin: 4px 22px;
+    padding: 14px 34px;
+    }
+  }
+
+  li.footer-templates {
+    @include grid-column(5, $principal-grid);
+    text-align: center;
+    @include rem(font-size, $nav-templates--desktop--font-size);
+    text-transform: uppercase;
+    font-family: $font-family--headings;
+    a {
+    font-weight: $font-weight-bold;
+    display: block;
+    color: $celadon-dark;
+    text-decoration: none;
+    }
+  }
+}

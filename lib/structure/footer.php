@@ -24,6 +24,20 @@ function unregister_footer_events() {
 //* Change the footer text
 add_filter('genesis_footer_creds_text', __NAMESPACE__ . '\footer_creds_filter');
 function footer_creds_filter( $creds ) {
-	$creds = '<a href="http://www.camillevillard.com">mentions legales</a> &middot; <a href="http://www.camillevillard.com">soutenir le blog</a></br>[footer_copyright after=" "] &middot; <p class="love">logo, petits dessins et site fabriqués avec <i class="icon ion-heart"></i> par <a href="http://www.camillevillard.com" target="_blank">camille villard</a></p>';
+	$creds = '<div class="footer-title">[footer_copyright after=" serendipité - tous droits réservés "]</div><p class="love">logo et webdesign imaginés et fabriqués avec <span class="accent-love">beaucoup d&apos;amour</span> par <a href="http://www.camillevillard.com" target="_blank">camille villard</a></p>';
 	return $creds;
+}
+
+// add the categories and random post links
+// add_action( 'genesis_after_footer', __NAMESPACE__ . '\footer_nav' );
+//  function footer_nav() {
+// 	 echo '<li class="footer-templates">';
+// 	 echo '<a class="btn-categories" href="#">parcourir les categories</a>';
+// 	 echo '<a class="btn-au-hasard" href="https://serendipite.org/=?random">article au hasard</a>';
+// 	 echo '</li>';
+// }
+
+add_action('genesis_after_footer', __NAMESPACE__ . '\footer_confidentialite');
+function footer_confidentialite() {
+	echo '<a class="mentions-footer" href="https://serendipite.org/=?random">politique de confidentialite</a>';
 }

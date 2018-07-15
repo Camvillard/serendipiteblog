@@ -5,25 +5,30 @@
 background: $rose-super-light;
 
   .wrap {
-  padding: 6%;
+  padding: 4% 10% 2%;
   }
 
   .categories-articles {
   text-align: center;
   }
 
-  h2.entry-title {
-  font-size: $front-page-secondaires-title--mobile--font-size;
+  article {
+  padding: 2%;
+  }
+
+  .entry-title {
+  @include rem(font-size, $front-page-secondaires-title--mobile--font-size);
   }
 
   a.more-link {
   background: $rose;
   }
 
+}
 
-  @media only screen and (min-width: $screen-size--regular) {
+@media only screen and (min-width: $screen-size--regular) {
+  .front-page-lecture {
     article {
-    padding: 3%;
       // gère l'affichage du premier article de la section
       &:first-of-type {
       @include grid-column(8, $principal-tablet-grid);
@@ -48,9 +53,15 @@ background: $rose-super-light;
   }
 
 
+}
 
 
+@media only screen and (min-width: $screen-size--large) {
 
+  .front-page-lecture {
 
-
+    .wrap {
+    padding: 4% 12% 2%;
+    }
+  }
 }

@@ -25,15 +25,17 @@
   color: $white;
   padding: 8px 24px;
   font-weight: $font-weight-bold;
+  font-family: $font-family--headings;
   }
 
 
   .custom-html-widget {
 
     .categories-articles {
+      margin-top: 20px;
     font-family: $font-family--accent;
     font-style: italic;
-    font-size: $front-page-separateurs-categories--mobile--font-size;
+    @include rem(font-size, $front-page-separateurs-categories--mobile--font-size);
       span.categories-accent {
       text-transform: uppercase;
       font-family: $font-family--primary;
@@ -42,15 +44,14 @@
     }
 
     .tous-articles {
-    @include grid-column(3, $principal-mobile-grid);
+    @include grid-column(4, $principal-mobile-grid);
     text-transform: uppercase;
     color: $gris-moyen;
-    float: right;
-    margin: auto;
 
       a {
       text-decoration: none;
       color: $gris-moyen;
+      font-family: $font-family--headings;
       }
 
       .signe {
@@ -58,12 +59,14 @@
       @include rem(font-size, $front-page-une-articles-suppl-signe--mobile--font-size);
       line-height: 0.8;
       font-weight: $font-weight-normal;
-      padding-right: 12px;
+      padding-right: 10px;
       text-align: right;
       border-right: $border--thin-gris-moyen;
       }
 
       .texte-lien {
+      padding-top: 3px;
+      padding-left: 10px;
       @include grid-column(3, $principal-mobile-grid);
       font-weight: $font-weight-bold;
       font-family: $font-family--headings;
@@ -73,33 +76,39 @@
   }
 
 
-  //tablette
+
+
+  //tablette portrait
   @media only screen and (min-width: $screen-size--medium) {
 
     .custom-html-widget {
+      .categories-articles {
+      @include rem(font-size, $front-page-separateurs-categories--tablet--font-size);
+      }
       .tous-articles {
-        @include grid-column(5, $principal-tablet-grid);
-        float: right;
+        padding: 8px;
+        @include grid-column(3, $principal-tablet-grid);
+        @include grid-push(5, $principal-tablet-grid);
 
         .signe {
-        @include grid-column(1, $principal-tablet-grid);
-        @include rem(font-size, $front-page-une-articles-suppl-signe--desktop--font-size);
+        @include grid-column(2, $principal-tablet-grid);
+        @include rem(font-size, $front-page-une-articles-suppl-signe--tablet--font-size);
         line-height: 0.7;
-        margin-left: 18px;
+        // margin-left: 18px;
         }
 
         .texte-lien {
-        @include grid-column(4, $principal-tablet-grid);
+        @include grid-column(6, $principal-tablet-grid);
         font-weight: $font-weight-bold;
         font-family: $font-family--headings;
-        @include rem(font-size, $front-page-une-articles-suppl-texte--mobile--font-size);
+        @include rem(font-size, $front-page-une-articles-suppl-texte--tablet--font-size);
         }
       }
     }
   }
 
 
-// tablette
+// tablette paysage
   @media only screen and (min-width: $screen-size--regular) {
 
     .post-info {
@@ -108,27 +117,25 @@
 
     .custom-html-widget {
       .categories-articles {
-      font-size: $front-page-separateurs-categories--desktop--font-size;
+      @include rem(font-size, $front-page-separateurs-categories--desktop--font-size);
       }
 
-      .tous-articles {
         .tous-articles {
-          @include grid-column(12, $principal-grid);
-          float: right;
+        @include grid-column(6, $principal-grid);
+        @include grid-push(6, $principal-grid);
         .signe {
-        @include grid-column(7, $principal-grid);
+        @include grid-column(4, $principal-grid);
         @include rem(font-size, $front-page-une-articles-suppl-signe--desktop--font-size);
         line-height: 0.8;
-        margin-left: 22px;
+        padding-right: 12px;
         }
         .texte-lien {
-        @include grid-column(3, $principal-grid);
-        padding-right: 22px;
+        @include grid-column(8, $principal-grid);
+        padding-left: 12px;
         @include rem(font-size, $front-page-une-articles-suppl-texte--desktop--font-size);
         }
 
       }
-    }
   }
 }
 

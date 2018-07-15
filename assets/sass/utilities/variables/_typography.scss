@@ -92,8 +92,20 @@ $site-description--font-size: 16px;
 //
 // Footer
 //==================
-$site-footer--font-size: 16px;
+
+
+$site-footer--mobile--font-size: 16px;
+$site-footer--tablet--font-size: 16px;
+$site-footer--desktop--font-size: 16px;
+
+$footer-mentions--mobile--font-size: 16px;
+$footer-mentions--tablet--font-size: 16px;
+$footer-mentions--desktop--font-size: 16px;
+
 $footer-widgets--font-size: 18px;
+$footer-widgets--mobile--font-size: 18px;
+$footer-widgets--desktop--font-size: 18px;
+
 
 
 //
@@ -104,26 +116,17 @@ $front-page-postinfo--mobile--font-size: 16px;
 $front-page-postinfo--tablet--font-size: 18px;
 $front-page-postinfo--desktop--font-size: 20px;
 
-$front-page-separateurs-categories--mobile--font-size: 14px;
-$front-page-separateurs-categories--tablet--font-size: 18px;
-$front-page-separateurs-categories--desktop--font-size: 20px;
+$front-page-separateurs-categories--mobile--font-size: 20px;
+$front-page-separateurs-categories--tablet--font-size: 22px;
+$front-page-separateurs-categories--desktop--font-size: 24px;
 
-$front-page-une-title--mobile--font-size: 28px;
-$front-page-une-title--tablet--font-size: 38px;
+$front-page-une-title--mobile--font-size: 26px;
+$front-page-une-title--tablet--font-size: 40px;
 $front-page-une-title--desktop--font-size: 46px;
 
-// bouton lire les articles sur le même sujet
-$front-page-une-articles-suppl-texte--mobile--font-size: 18px;
-$front-page-une-articles-suppl-texte--tablet--font-size: 22px;
-$front-page-une-articles-suppl-texte--desktop--font-size: 26px;
-
-$front-page-une-articles-suppl-signe--mobile--font-size: 70px;
-$front-page-une-articles-suppl-signe--tablet--font-size: 80px;
-$front-page-une-articles-suppl-signe--desktop--font-size: 90px;
-
-$front-page-secondaires-title--mobile--font-size: 22px;
-$front-page-secondaires-title--tablet--font-size: 32px;
-$front-page-secondaires-title--desktop--font-size: 38px;
+$front-page-secondaires-title--mobile--font-size: 24px;
+$front-page-secondaires-title--tablet--font-size: 28px;
+$front-page-secondaires-title--desktop--font-size: 32px;
 
 $front-page-about-texte--mobile--font-size: 24px;
 $front-page-about-texte--tablet--font-size: 28px;
@@ -132,6 +135,15 @@ $front-page-about-texte--desktop--font-size: 30px;
 $front-page-about-liens--mobile--font-size: 22px;
 $front-page-about-liens--tablet--font-size: 32px;
 $front-page-about-liens--desktop--font-size: 38px;
+
+// bouton lire les articles sur le même sujet
+$front-page-une-articles-suppl-texte--mobile--font-size: 16px;
+$front-page-une-articles-suppl-texte--tablet--font-size: 20px;
+$front-page-une-articles-suppl-texte--desktop--font-size: 24px;
+
+$front-page-une-articles-suppl-signe--mobile--font-size: 70px;
+$front-page-une-articles-suppl-signe--tablet--font-size: 90px;
+$front-page-une-articles-suppl-signe--desktop--font-size: 98px;
 
 //
 // Entry Content
@@ -208,11 +220,57 @@ $comments-placeholder--mobile--font-size: 18px;
 $comments-placeholder--tablet--font-size: 22px;
 $comments-placeholder--desktop--font-size: 24px;
 
+
+//
+// Special templates
+//===================
+
+$nav-templates--mobile--font-size: 18px;
+$nav-templates--tablet--font-size: 20px;
+$nav-templates--desktop--font-size: 26px;
+
+$templates-about-title--mobile--font-size: 24px;
+$templates-about-title--tablet--font-size: 28px;
+$templates-about-title--desktop--font-size: 44px;
+
+$templates-about-accent--mobile--font-size: 24px;
+$templates-about-accent--tablet--font-size: 28px;
+$templates-about-accent--desktop--font-size: 36px;
+
+$templates-about-text--mobile--font-size: 24px;
+$templates-about-text--tablet--font-size: 28px;
+$templates-about-text--desktop--font-size: 36px;
+
+$templates-about-signature--mobile--font-size: 30px;
+$templates-about-signature--tablet--font-size: 30px;
+$templates-about-signature--desktop--font-size: 36px;
+
+$templates-about-menu--mobile--font-size: 22px;
+$templates-about-menu--tablet--font-size: 24px;
+$templates-about-menu--desktop--font-size: 36px;
+
+$templates-about-submenu--mobile--font-size: 16px;
+$templates-about-submenu--tablet--font-size: 20px;
+$templates-about-submenu--desktop--font-size: 30px;
+
+$templates-contact-form-info--mobile--font-size: 18px;
+$templates-contact-form-info--tablet--font-size: 18px;
+$templates-contact-form-info--desktop--font-size: 20px;
+
+
+$templates-error-content--mobile--font-size: 32px;
+$templates-error-content--tablet--font-size: 44px;
+$templates-error-content--desktop--font-size: 54px;
+
+$templates-error-widgets--mobile--font-size: 28px;
+$templates-error-widgets--tablet--font-size: 34px;
+$templates-error-widgets--desktop--font-size: 44px;
+
 //
 // Widgets
 //===================
 $widget-title--font-size: 18px;
-$featured-content__entry-title--font-size: 20px;
+$featured-content--entry-title--font-size: 20px;
 
 //
 // Plugins
@@ -224,7 +282,18 @@ $enews--font-size: 16px;
 //===================
 $breadcrumbs--font-size: 16px;
 $author-box--font-size: 18px;
-$author-box__Title--font-size: 20px;
+$author-box--title--font-size: 20px;
 $after-entry--font-size: 18px;
+
+
 $archive-description--font-size: 18px;
+
+$archive-description--mobile--font-size: 18px;
+$archive-description--tablet--font-size: 18px;
+$archive-description--desktop--font-size: 18px;
+
 $archive-title--font-size: 20px;
+
+$archive-title--mobile--font-size: 20px;
+$archive-title--tablet--font-size: 20px;
+$archive-title--desktop--font-size: 20px;

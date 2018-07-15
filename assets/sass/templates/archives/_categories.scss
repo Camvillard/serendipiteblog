@@ -1,1 +1,39 @@
 /* ----- archives des categories : généralités ----- */
+
+.category {
+  .wrap {
+  max-width: $max-width;
+  }
+  .entry-title {
+  @include rem(font-size, $front-page-secondaires-title--mobile--font-size);
+  }
+  .entry-meta {
+  font-style: italic;
+  @include rem(font-size, $front-page-postinfo--mobile--font-size);
+  }
+  .entry-content {
+    a.more-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    background: $celadon;
+    padding: 8px 24px;
+    font-weight: $font-weight-bold;
+    font-family: $font-family--headings;
+    }
+  }
+  .pagination {
+    font-family: $font-family--headings;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: $screen-size--regular) {
+  .category {
+
+    article {
+    @include grid-column(6, $principal-grid);
+    padding: 4%;
+    }
+  }
+}

@@ -1,42 +1,45 @@
 /* ----- entry meta (header) ----- */
 
-.entry-header {
 
-  .entry-meta {
+.single-post {
+
+  .entry-header {
+
+    .entry-meta {
     margin-bottom: 24px;
     @include rem( font-size, $entry-header-meta--mobile--font-size );
     font-style: italic;
     font-family: $font-family--accent;
     line-height: 1.8;
 
-      .entry-time,
-      .entry-categories a {
-      background: $celadon;
-      text-decoration: none;
-      color: $gris-moyen;
-      }
-
+        .entry-time,
+        .entry-categories a {
+        background: $celadon;
+        text-decoration: none;
+        color: $gris-moyen;
+        }
+    }
   }
-
 }
+
 
 @media only screen and (min-width: $screen-size--large) {
 
-  .entry-header {
+  .single-post {
 
-    .entry-meta {
-      margin-bottom: 24px;
-      @include rem( font-size, $entry-header-meta--desktop--font-size );
-      line-height: 2;
+    .entry-header {
+
+      .entry-meta {
+        margin-bottom: 24px;
+        @include rem( font-size, $entry-header-meta--desktop--font-size );
+        line-height: 2;
+
+      }
 
     }
 
   }
 
-}
 
-// .entry-comments-link::before {
-//   content: "\2014";
-//   margin: 0 6px 0 2px;
-//   border: $border--large-rose;
-// }
+
+}

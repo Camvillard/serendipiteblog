@@ -23,5 +23,5 @@
 }
 
 .author-box-title {
-  font-size: $author-box__Title--font-size;
+  @include rem(font-size, $author-box--title--font-size);
 }

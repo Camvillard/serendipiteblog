@@ -60,5 +60,11 @@ return array(
 			'description' => __( 'seventh widget area', 'serendipite' ),
 		),
 
+		array(
+			'id'          => '404-page',
+			'name'        => __( 'special widget area', 'serendipite' ),
+			'description' => __( 'special widget area', 'serendipite' ),
+		),
+
 	),
 );

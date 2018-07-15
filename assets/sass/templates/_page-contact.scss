@@ -1,3 +1,188 @@
 //
 /* ----- c. page contact ----- */
 //
+
+
+.page-contact {
+background: $rose-super-light;
+
+  li.nav-templates {
+    a.btn-retour-au-blog {
+    border: $border--thin-rose;
+    background: $rose;
+    color: $white;
+      &:hover {
+      color: $rose;
+      background: $white;
+      }
+    }
+
+    a.btn-contact {
+    border: $border--thin-rose;
+    color: $rose;
+    background: $white;
+      &:hover {
+      background: $rose;
+      color: $white;
+      }
+    }
+  }
+
+  .entry-content {
+  padding: 10px 8%;
+    .contact-img {
+    margin-top: 6% auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    }
+
+    .contact-form {
+    margin-top: 30px;
+    }
+
+    .nf-form-fields-required,
+    span.ninja-forms-req-symbol {
+    font-style: italic;
+    font-family: $font-family--accent;
+    color: $gris-moyen;
+    @include rem(font-size, $templates-contact-form-info--mobile--font-size);
+    margin-bottom: 10px;
+    text-align: center;
+    }
+
+    .nf-element {
+    background: $white;
+    border: none;
+    border-bottom: $border--thin-rose;
+    }
+
+    input[placeholder],
+    textarea[placeholder] {
+    text-transform: uppercase;
+    }
+
+    input[type="button"] {
+      background: $rose;
+      color: $white;
+      font-family: $font-family--headings;
+      text-transform: uppercase;
+      font-weight: $font-weight-bold;
+      width: 100%;
+    }
+  }
+
+  li.footer-templates {
+  width: 100%;
+  }
+
+  .btn-categories {
+  clear: both;
+  margin: 10px auto 4px;
+  color: $rose-dark;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  @include rem(font-size, $templates-about-menu--mobile--font-size);
+  }
+
+  a.cat-about {
+  display: inline;
+  @include rem(font-size, $templates-about-submenu--mobile--font-size);
+  margin: 4px 3px;
+  color: $gris;
+  font-weight: $font-weight-normal;
+  }
+
+  .btn-au-hasard {
+  clear: both;
+  margin: 10px auto;
+
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  @include rem(font-size, $templates-about-menu--mobile--font-size);
+  a {
+  color: $rose-dark;
+  }
+  }
+
+}
+
+@media only screen and (min-width: $screen-size--small) {
+  .page-contact{
+    .entry-content {
+    padding: 10px 12%;
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-size--medium) {
+  .page-contact{
+    .entry-content {
+    padding: 10px 16%;
+      .contact-img {
+      padding-left: 18%;
+      padding-right: 18%;
+      }
+    }
+
+    .btn-categories {
+    @include rem(font-size, $templates-about-menu--tablet--font-size);
+    }
+
+    a.cat-about {
+    @include rem(font-size, $templates-about-submenu--tablet--font-size);
+    margin: 4px 3px;
+    }
+
+    .btn-au-hasard {
+    @include rem(font-size, $templates-about-menu--tablet--font-size);
+    }
+  }
+}
+
+
+@media only screen and (min-width: $screen-size--regular) {
+  .page-contact{
+    .entry-content {
+    padding: 10px 12%;
+    .contact-img {
+    padding-left: 22%;
+    padding-right: 22%;
+    }
+    }
+  }
+}
+
+
+
+
+@media only screen and (min-width: $screen-size--large) {
+  .page-contact{
+    .entry-content {
+    padding: 10px 6%;
+    clear: both;
+
+      .contact-img {
+      margin-top: 12%;
+      padding-left: 10%;
+      padding-right: 10%;
+      @include grid-column(6, $principal-grid);
+      }
+
+      .contact-form {
+      @include grid-column(6, $principal-grid);
+      clear: right;
+      }
+    }
+
+    li.footer-templates {
+    @include grid-column(12, $principal-grid);
+    clear: both;
+
+      .btn-categories,
+      .btn-au-hasard {
+      @include grid-column(4, $principal-grid);
+      }
+    }
+
+  }
+}

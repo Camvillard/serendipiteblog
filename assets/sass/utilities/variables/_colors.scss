@@ -10,6 +10,7 @@ $gris: #3D3F3E;
 
 $celadon: #C6F4D2;
 $celadon-light: #E8FCEC;
+$celadon-super-light: #F8FFF9;
 $celadon-dark: #9DCEAD;
 $rose: #FC427C;
 $rose-light: #FCD6DE;
@@ -76,7 +77,7 @@ $archive-pagination--hover-color: $white;
 //
 // Footer
 //============================
-$siteFooter--background-color: $white;
+$siteFooter--background-color: $celadon-light;
 $site-footer--border-color: $gris-clair;
 $footer-widgets--background-color: $white;
 

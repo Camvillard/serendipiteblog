@@ -1,3 +1,174 @@
 //
 /* ----- b. page about ----- */
 //
+
+
+.page-about {
+background: $celadon-super-light;
+
+li.nav-templates {
+  a.btn-retour-au-blog {
+  border: $border--thin-celadon;
+  background: $celadon;
+    &:hover {
+    color: $celadon;
+    color: $white;
+    }
+  }
+
+  a.btn-contact {
+  border: $border--thin-celadon;
+  color: $celadon;
+    &:hover {
+    background: $white;
+    }
+  }
+}
+
+  .entry-content {
+  padding: 10px;
+    .about-img {
+    max-width: 200px;
+    margin: auto;
+    }
+    .about-text {
+
+      h3 {
+      text-align: center;
+      @include rem(font-size, $templates-about-title--mobile--font-size);
+      color: $gris;
+      }
+      h4 {
+      text-align: center;
+      @include rem(font-size, $templates-about-accent--mobile--font-size);
+      text-transform: none;
+      color: $gris;
+      }
+      h6 {
+      text-align: right;
+      font-style: italic;
+      font-family: $font-family--accent;
+      font-weight: $font-weight-bold;
+      color: $gris;
+      text-transform: none;
+      @include rem(font-size, $templates-about-signature--mobile--font-size);
+      }
+    }
+  }
+
+  li.footer-templates {
+  width: 100%;
+  }
+
+  .btn-categories {
+    clear: both;
+    margin: 10px auto 4px;
+    color: $celadon-dark;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    @include rem(font-size, $templates-about-menu--mobile--font-size);
+  }
+
+  a.cat-about {
+    display: inline;
+    @include rem(font-size, $templates-about-submenu--mobile--font-size);
+    margin: 4px 3px;
+    color: $gris;
+    font-weight: $font-weight-normal;
+  }
+
+  .btn-au-hasard {
+    clear: both;
+    margin: 10px auto;
+    color: $celadon-dark;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    @include rem(font-size, $templates-about-menu--mobile--font-size);
+  }
+}
+
+
+
+@media only screen and (min-width: $screen-size--medium) {
+  .page-about {
+    .entry-content {
+      padding: 10px 120px;
+      .about-img {
+      max-width: 300px;
+      margin: auto;
+      }
+      .about-text {
+        h3 {
+        @include rem(font-size, $templates-about-title--tablet--font-size);
+        }
+        h4 {
+        @include rem(font-size, $templates-about-accent--tablet--font-size);
+        }
+        h6 {
+        @include rem(font-size, $templates-about-signature--tablet--font-size);
+        }
+      }
+    }
+
+    .btn-categories {
+    @include rem(font-size, $templates-about-menu--tablet--font-size);
+    }
+
+    a.cat-about {
+    @include rem(font-size, $templates-about-submenu--tablet--font-size);
+    }
+
+    .btn-au-hasard {
+    @include rem(font-size, $templates-about-menu--tablet--font-size);
+    }
+
+  }
+}
+
+
+
+@media only screen and (min-width: $screen-size--large) {
+  .page-about {
+    article {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    }
+
+    .entry-content {
+    max-width: $max-width;
+    padding: 10px 80px;
+    margin: auto;
+      .about-img {
+      margin-top: 10%;
+      @include grid-column(5, $principal-grid);
+      }
+      .about-text {
+      @include grid-column(7, $principal-grid);
+      padding-left: 20px;
+        h3 {
+        text-align: left;
+        margin-left: -20px;
+        @include rem(font-size, $templates-about-title--desktop--font-size);
+        }
+        h4 {
+        text-align: left;
+        @include rem(font-size, $templates-about-accent--desktop--font-size);
+        }
+        h6 {
+        @include rem(font-size, $templates-about-signature--desktop--font-size);
+        }
+      }
+    }
+
+    li.footer-templates {
+    @include grid-column(12, $principal-grid);
+    clear: both;
+
+      .btn-categories,
+      .btn-au-hasard {
+      @include grid-column(4, $principal-grid);
+      }
+    }
+  }
+}

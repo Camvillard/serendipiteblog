@@ -4,23 +4,63 @@
 .front-page-secondaire {
 
   .wrap {
-  padding: 8%;
+  padding: 4% 10% 2%;
   }
 
   .categories-articles {
   text-align: center;
   }
 
+  article {
+  padding: 2%;
+  }
+
+  .entry-title {
+  @include rem(font-size, $front-page-secondaires-title--mobile--font-size) ;
+  margin-bottom: 20px;
+  }
+
   a.more-link {
     background: $celadon;
     text-align: center;
   }
+}
 
+@media only screen and (min-width: $screen-size--medium) {
 
-  @media only screen and (min-width: $screen-size--regular) {
+  .front-page-secondaire {
+
+      .entry-title {
+      @include rem(font-size, $front-page-secondaires-title--tablet--font-size) ;
+      margin-bottom: 20px;
+      }
+    }
+
+}
+
+@media only screen and (min-width: $screen-size--regular) {
+
+  .front-page-secondaire {
+
     article {
       @include grid-column(4, $principal-grid);
       padding: 3%;
+
+      .entry-title {
+      @include rem(font-size, $front-page-secondaires-title--desktop--font-size) ;
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (min-width: $screen-size--large) {
+
+  .front-page-secondaire {
+
+    .wrap {
+    padding: 4% 12% 2%;
     }
   }
 }

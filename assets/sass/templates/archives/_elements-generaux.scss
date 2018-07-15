@@ -1,26 +1,28 @@
 /* ----- archives : éléments généraux ----- */
 
-.archive-description .entry-title,
+.entry-title,
 .archive-title {
-  font-size: $archive-title--font-size;
+@include rem(font-size, $archive-title--mobile--font-size);
+color: $gris-moyen;
 }
 
-
-
-/* ----- archives : description ----- */
+.archive-pre-title {
+  font-style: italic;
+  font-family: $font-family--accent;
+  color: $gris-clair;
+}
 
 .archive-description {
-  background-color: $archive-description--background-color;
-  @include rem( font-size, $archive-description--font-size );
+  @include rem( font-size, $archive-description--mobile--font-size );
   margin-bottom: 40px;
-  padding: 60px;
+  padding: 30px;
+  text-align: center;
 
   p:last-child {
     margin-bottom: 0;
   }
+}
 
-   @media screen and (max-width: 860px) {
-    padding: 30px;
-    margin-bottom: 5%;
-  }
+@media only screen and (min-width: $screen-size--medium) {
+
 }

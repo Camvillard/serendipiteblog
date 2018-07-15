@@ -1,0 +1,87 @@
+//
+/* ----- e. page contact ----- */
+//
+
+
+.error404 {
+background-color: $celadon-light;
+  .site-inner {
+  max-width: $max-width;
+  }
+  .entry {
+  text-align: center;
+  font-family: $font-family--headings;
+  @include rem(font-size, $templates-error-content--mobile--font-size);
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+  }
+  .error-page-widgets {
+  padding: 5%;;
+    .widget_search {
+    text-align: center;
+    .widget-title {
+    color: $celadon-dark;
+    font-weight: $font-weight-bold;
+    @include rem(font-size, $templates-error-widgets--mobile--font-size);
+    }
+
+    }
+    .widget_text {
+      text-align: center;
+      a, h3{
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $celadon-dark;
+      font-weight: $font-weight-bold;
+      font-family: $font-family--headings;
+      @include rem(font-size, $templates-error-widgets--mobile--font-size);
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: $screen-size--medium) {
+  .error404 {
+    .entry {
+    @include rem(font-size, $templates-error-content--tablet--font-size);
+    }
+    .error-page-widgets {
+    padding: 8%;
+      .widget_search {
+      .widget-title {
+      @include rem(font-size, $templates-error-widgets--tablet--font-size);
+      }
+
+      }
+      .widget_text {
+        a, h3{
+        @include rem(font-size, $templates-error-widgets--tablet--font-size);
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: $screen-size--large) {
+  .error404 {
+    .entry {
+    @include rem(font-size, $templates-error-content--desktop--font-size);
+    }
+    .error-page-widgets {
+    padding: 10%;
+      .widget_search {
+      .widget-title {
+      @include rem(font-size, $templates-error-widgets--desktop--font-size);
+      }
+
+      }
+      .widget_text {
+        a, h3{
+        @include rem(font-size, $templates-error-widgets--desktop--font-size);
+        }
+      }
+    }
+  }
+}

@@ -5,13 +5,17 @@
 background: $rose-super-light;
 
   .wrap {
-  padding: 5%;
+  padding: 4% 10% 2%;
+  }
+
+  .categories-articles {
+  text-align: center;
   }
 
   article {
-
-    h2.entry-title {
-    font-size: $front-page-secondaires-title--mobile--font-size;
+  padding: 2%;
+    .entry-title {
+    @include rem(font-size, $front-page-secondaires-title--mobile--font-size) ;
     }
 
     a.more-link {
@@ -19,42 +23,79 @@ background: $rose-super-light;
     }
   }
 
+}
 
-  //tablette
-  @media only screen and (min-width: $screen-size--regular) and (max-width: 1023px) {
+//tablette
+@media only screen and (min-width: $screen-size--regular) {
+
+.front-page-quotidien {
+
+  .wrap {
+  padding: 10%;
+  }
+
+  .categories-articles {
+  text-align: left;
+  }
+
+  article {
+
+    a.aligncenter {
+    @include grid-column(4, $principal-tablet-grid);
+    margin-bottom: 2px;
+    }
+
+    .entry-meta,
+    .entry-title {
+    @include grid-column(4, $principal-tablet-grid);
+    text-align: left;
+    }
+
+    h2.entry-title {
+    @include rem(font-size, $front-page-secondaires-title--tablet--font-size) ;
+    }
+
+    p {
+    @include grid-column(4, $principal-tablet-grid);
+    }
+  }
+}
+
+
+}
+
+//desktop
+@media only screen and (min-width: $screen-size--large) {
+
+  .front-page-quotidien {
+
+    .wrap {
+    padding: 4% 12% 2%;
+    }
+
     article {
+    @include grid-column(6, $principal-grid);
 
       a.aligncenter {
-      @include grid-column(4, $principal-tablet-grid);
+      @include grid-column(12, $principal-grid);
       margin-bottom: 2px;
       }
 
       .entry-meta,
       .entry-title {
-      @include grid-column(4, $principal-tablet-grid);
-      }
-
-      h2.entry-title {
-      font-size: $front-page-secondaires-title--tablet--font-size;
+      @include grid-column(12, $principal-grid);
       }
 
       p {
-      @include grid-column(4, $principal-tablet-grid);
+      @include grid-column(12, $principal-grid);
       }
-    }
-  }
-
-  //desktop
-  @media only screen and (min-width: $screen-size--large) {
-    article {
-      @include grid-column(6, $principal-grid);
 
       h2.entry-title {
-      font-size: $front-page-secondaires-title--desktop--font-size;
+      @include rem(font-size, $front-page-secondaires-title--desktop--font-size) ;
       }
 
     }
-  }
 
+  }
 
 }
